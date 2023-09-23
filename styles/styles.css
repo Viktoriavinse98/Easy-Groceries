@@ -1,0 +1,761 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 99vh;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://ie.wampi.ru/2023/09/03/1612738030_82-p-fon-sine-goluboi-abstraktsiya-112.md.jpg");
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Lilita One', cursive;
+
+}
+
+h1 {
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Lilita One', cursive;
+    font-size: 500%;
+    margin: 7px auto;
+    display: block;
+    text-align: center;
+    max-width: 600x;
+
+}
+
+
+
+.btnExit {
+    max-width: 50px;
+    min-height: 50px;
+    border: none;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://ie.wampi.ru/2023/09/02/exit.png");
+
+}
+
+.btnEnterMain {
+    max-width: 50px;
+    min-height: 50px;
+    border: none;
+    display: block;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://ie.wampi.ru/2023/09/02/user.png");
+
+}
+
+.btnEnterMain:hover,
+.btnExit:hover {
+    min-width: 57px;
+    min-height: 57px;
+}
+
+.btnExitContainer {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    display: block;
+    margin-left:7px ;
+
+}
+
+.btnEnterContainer {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    display: block;
+    margin-right:7px ;
+
+
+}
+
+.mainContent {
+    position: relative;
+}
+
+.create_input::placeholder,
+.enter-form ::placeholder,
+.create-form ::placeholder {
+    color: rgb(71, 66, 66);
+}
+
+a {
+    text-decoration: none;
+}
+
+.enter-account-form,
+.create-account-form {
+    max-width: 300px;
+    border: none;
+    border-radius: 40px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://im.wampi.ru/2023/09/03/1675545734_top-fon-com-p-fon-dlya-prezentatsii-goluboi-nezhnii-odno-55.png");
+    margin: 80px auto;
+    min-height: 200px;
+
+
+}
+
+.enter_login,
+.enter_password,
+.create_login,
+.create_password {
+    display: block;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin: 10px auto;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+    width: 90%;
+}
+
+.btn_registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C8ADB;
+    border-radius: 10px;
+    outline: none;
+    color: black;
+    width: 70%;
+    height: 27px;
+    margin: 10px auto;
+    font-size: 17px;
+    transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+}
+
+.enter_login,
+.enter_password,
+.create_login,
+.create_password {
+    border-color: rgb(49, 38, 42);
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+.create_list_btn:active,
+.btn_create:active,
+.btn_enter:active,
+.btn_registration:active {
+    font-size: 110%;
+}
+
+.error {
+    color: red;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.create_input:focus,
+.enter_login:focus,
+.enter_password:focus,
+.create_login:focus,
+.create_password:focus {
+    background-color: rgb(216, 231, 231);
+    border-color: #1C8ADB
+}
+
+.btn_registration_from_enter_modal:hover,
+.btn_enter_from_enter_modal:hover,
+.create_list_btn:hover,
+.btn_create:hover,
+.btn_enter:hover,
+.btn_registration:hover {
+    color: white;
+    border-color: #363636;
+    box-shadow: 0 0 40px 40px #363636 inset;
+
+}
+
+.btn_create,
+.btn_enter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    border: 1px solid #1C8ADB;
+    border-radius: 10px;
+    outline: none;
+    color: black;
+    width: 60%;
+    height: 25px;
+    margin: 10px auto;
+    font-size: 17px;
+    transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+    text-align: center;
+}
+
+.btn_enter_from_enter_modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C8ADB;
+    border-radius: 10px;
+    outline: none;
+    color: black;
+    width: 60%;
+    height: 25px;
+    margin: 10px auto;
+    font-size: 17px;
+    transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+    text-align: center;
+}
+
+.btn_registration_from_enter_modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    border: 1px solid #1C8ADB;
+    border-radius: 10px;
+    outline: none;
+    color: black;
+    width: 60%;
+    height: 25px;
+    margin: 10px auto;
+    font-size: 17px;
+    transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+    text-align: center;
+}
+
+.text_create,
+.text_enter {
+    text-align: center;
+    font-size: 15px;
+}
+
+.text-enter-account-header,
+.text-create-account-header {
+    font-size: 30px;
+    text-align: center;
+    color: #431B57;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.list_for_store {
+    position: relative;
+    max-width: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://im.wampi.ru/2023/08/22/1674605040_top-fon-com-p-fon-dlya-prezentatsii-delovoi-bloknot-156.jpg");
+    min-height: 500px;
+    margin: 10px auto;
+
+}
+
+.product_store_list {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    font-size: 25px;
+}
+
+.btnDone {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.create_list {
+    max-width: 350px;
+    background-image: url("https://im.wampi.ru/2023/09/03/1675545734_top-fon-com-p-fon-dlya-prezentatsii-goluboi-nezhnii-odno-55.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 190px;
+    border-radius: 20px;
+    margin: 90px auto;
+}
+
+.create_list_header {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #431B57;
+    padding-top: 10px;
+}
+
+.create_input {
+    display: block;
+    border: 1px solid black;
+    min-width: 220px;
+    margin: 15px auto;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+    width: 80%;
+    padding-top: 7px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+.create_list_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C8ADB;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: black;
+    width: 60%;
+    height: 25px;
+    margin: 10px auto;
+    font-size: 17px;
+    text-align: center;
+    transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+}
+
+.create_list_all_product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 31, 223);
+    border: 1px solid #363636;
+    border-radius: 10px;
+    outline: none;
+    color: black;
+    width: 40%;
+    height: 25px;
+    margin: 15px auto;
+    font-size: 17px;
+    text-align: center;
+}
+
+.create_list_all_product:hover {
+    background-color: rgb(212, 52, 233);
+}
+
+.create_list_all_product:active {
+    color: white;
+}
+
+.sweet,
+.pasta,
+.water,
+.tea,
+.fish,
+.meat,
+.bread,
+.milk,
+.vegetables,
+.all_product {
+    max-width: 600px;
+    background-image: url("https://im.wampi.ru/2023/09/03/1675545734_top-fon-com-p-fon-dlya-prezentatsii-goluboi-nezhnii-odno-55.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 7px;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+
+.all_product_header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #431B57;
+    padding-top: 10px;
+    margin-bottom: 7px;
+}
+
+.water_elem,
+.tea_elem,
+.meat_elem,
+.product_elem {
+    padding: 5px;
+    display: block;
+    max-width: 400px;
+    width: 60%;
+    margin: 10px auto;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(18, 106, 221);
+    background-color: inherit;
+    color: black;
+    text-align: center;
+}
+
+.sweet_elem:hover,
+.pasta_elem:hover,
+.water_elem:hover,
+.tea_elem:hover,
+.fish_elem:hover,
+.meat_elem:hover,
+.bread_elem:hover,
+.milk_elem:hover,
+.vegetables_elem:hover,
+.product_elem:hover {
+    background-color: rgb(53, 243, 218);
+    color: rgb(8, 42, 153);
+}
+
+.sweet_elem:active,
+.pasta_elem:active,
+.water_elem:active,
+.tea_elem:active,
+.fish_elem:active,
+.meat_elem:active,
+.bread_elem:active,
+.milk_elem:active,
+.vegetables_elem:active,
+.product_elem:active {
+    font-weight: bold;
+    background-color: #431B57;
+    color: white;
+}
+
+.sweet_container,
+.pasta_container,
+.fish_container,
+.bread_container,
+.milk_container,
+.vegetables_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sweet_elem,
+.pasta_elem,
+.fish_elem,
+.bread_elem,
+.milk_elem,
+.vegetables_elem {
+    padding: 5px;
+    display: block;
+    max-width: 200px;
+    width: 50%;
+    margin: 6px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(18, 106, 221);
+    background-color: inherit;
+
+}
+
+.sweet_btn,
+.pasta_btn,
+.water_btn,
+.tea_btn,
+.fish_btn,
+.meat_btn,
+.bread_btn,
+.milk_btn,
+.vegetables_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ac55d8;
+    font-size: 40px;
+    border: none;
+    margin: 10px;
+    color: black;
+}
+
+.sweet_btn:hover,
+.pasta_btn:hover,
+.water_btn:hover,
+.tea_btn:hover,
+.fish_btn:hover,
+.meat_btn:hover,
+.bread_btn:hover,
+.milk_btn:hover,
+.vegetables_btn:hover {
+    color: aliceblue;
+}
+
+.sweet_btn:active,
+.pasta_btn:active,
+.water_btn:active,
+.tea_btn:active,
+.fish_btn:active,
+.meat_btn:active,
+.bread_btn:active,
+.milk_btn:active,
+.vegetables_btn:active {
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.product_list {
+    max-width: 500px;
+    background-image: url("https://ic.wampi.ru/2023/09/09/png-clipart-book-notepad-book-notebook6eaaab3e94593791.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 7px;
+    border-radius: 20px;
+    margin: 20px auto;
+    min-height: 300px;
+}
+.name_list {
+    text-align: center;
+    font-size: 200%;
+    color: black;
+    font-weight: bold;
+}
+
+
+.account {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://im.wampi.ru/2023/09/03/1675545734_top-fon-com-p-fon-dlya-prezentatsii-goluboi-nezhnii-odno-55.png");
+    max-width: 600px;
+    background-color: white;
+    padding-bottom: 7px;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.my_lists {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: 7px;
+}
+
+.account_conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.lists {
+    list-style-type: none;
+    width: 70%;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.lists li {
+    width: 70%;
+    min-height: 15px;
+    max-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.list {
+    list-style-type: none;
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+.produc_in_store{
+    width:100%;
+    min-height: 15px;
+    max-height: 35px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between; 
+}
+.listProduct_item,
+.list_item {
+    text-decoration: none;
+    font-size: 160%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    color: #431B57;
+    margin-left: 14px;
+    padding-bottom: 9px;
+}
+
+.lists li:hover {
+    border: 1px solid #431B57;
+    border-radius: 20px;
+}
+
+.lists li:active {
+    font-weight: bold;
+}
+.done_btnProduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 1px solid #431B57;
+    margin-right: 0;  
+}
+.deleteProduct_btn,
+.delete_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 1px solid #431B57;
+    margin-right: 15px;
+}
+.deleteProduct_btn{
+    margin-right: 20px;
+}
+.done_btnProduct:hover{
+    background-color: rgb(19, 202, 19);
+    border-color: rgb(19, 202, 19);
+}
+.done_btnProduct:active{
+    background-color: rgb(19, 202, 19);
+    border-color: rgb(19, 202, 19);
+}
+.deleteProduct_btn:hover,
+.delete_btn:hover {
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+
+.account_btn {
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: inherit;
+    display: flex;
+    transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+}
+
+.account_btn:hover {
+    border-color: #363636;
+    box-shadow: 0 0 40px 40px #363636 inset;
+    color: white;
+}
+
+.account_btn:active {
+    font-weight: bold;
+
+}
+
+.error_login_registration,
+.error_login_enter,
+.error_password_registration,
+.error_password_enter {
+    color: red;
+    font-size: 20px;
+    margin: 0;
+    display: none;
+}
+
+.btn_disabled {
+    color: white;
+    background-color: rgb(27, 241, 38);
+    border-color: rgb(27, 241, 38);
+}
+
+.btn_disabled:hover {
+    color: white;
+    background-color: rgb(27, 241, 38);
+    border-color: rgb(27, 241, 38);
+    font-weight: normal;
+}
+.blocks {
+    display: flex;
+
+position: absolute;
+top: 15px;
+right: 20px;
+}
+.back_to_account {
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    background-color: #1C8ADB;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    width: 70%;
+    height: 27px;
+    font-size: 17px;
+    transition: box-shadow 400ms ease-in-out, color 400ms ease-in-out;
+}
+.back_to_account a {
+    color: white;
+}
+.back_to_account:hover {
+    border-color: rgb(13, 204, 13);
+    box-shadow: 0 0 40px 40px rgb(13, 204, 13) inset;
+}
+.back_to_account a:hover {
+  color: black;
+}
+.gif {
+    background: url('https://i.yapx.ru/GuFC4.gif');
+    width:  30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    z-index: 3;
+}
+.error_massege {
+    color: rgb(187, 175, 175);
+    font-weight: bold;
+    font-size: 130%;
+    
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 370%;
+    }
+}
+@media (max-width: 720px) {
+   .app {
+        display: flex;
+        flex-direction: column;
+    }
+    .blocks{
+        position: static;
+        margin: auto;
+    }
+    .all_product_header {
+        margin-top: 10px;
+        display: block;
+        font-size: 180%;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 300%;
+    }
+}
